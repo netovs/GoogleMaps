@@ -25,8 +25,8 @@ function initMap() {
   var logoCWeb 		= 'https://comunicacionweb.com.mx/images/main-logo.png';
   var logoXHTWEB	= 'http://xhtweb.com.mx/wp-content/uploads/2016/07/xhtweb_transparente_1.png';
   
-  var cwebPM = {lat: 21.6660159, lng: -98.6699083};
-  var cwebCDMX = {lat: 21.6660159, lng: -98.6699083};
+  var cwebPM = {lat: 20.8635538, lng: -86.9022525};
+  var cwebCDMX = {lat: 19.4890817, lng: -99.2057535};
   
   var cweb = '<h3>Comunicación <br/>Web</h3>';
   var xhtweb = '<h3>XHTWEB</h3>';
@@ -41,13 +41,22 @@ function initMap() {
   });
 
   var markCWEB = new google.maps.Marker({
+    position: cwebCDMX,
+    map: map,
+    title: 'Comunicación Web'
+  });
+  
+  var markCWEB = new google.maps.Marker({
     position: cwebPM,
     map: map,
     title: 'Comunicación Web'
   });
+  
   markCWEB.addListener('click', function() {
     infowindowCWEB.open(map, markCWEB);
   });
+  
+  
   
   
   
