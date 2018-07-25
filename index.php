@@ -27,22 +27,23 @@ function initMap() {
   
   var cwebPM = {lat: 20.8635538, lng: -86.9022525};
   var cwebCDMX = {lat: 19.4890817, lng: -99.2057535};
+  var xhtweb = {lat: 20.8698738, lng: -86.9654525};
   
   var cweb = '<h3>Comunicación <br/>Web</h3>';
   var cwebPMTXT = '<h3>Comunicación <br/>Web<br/>Puerto Morelos</h3>';
-  var xhtweb = '<h3>XHTWEB</h3>';
+  var xhtwebTXT = '<h3>XHTWEB</h3>';
   
   
   var infowindowCWEB = new google.maps.InfoWindow({
     content: cweb
   });
   
-  var infowindowCWEBPM = new google.maps.InfoWindow({
-    content: cwebPMTXT
+  var infowindowXHTWEB = new google.maps.InfoWindow({
+    content: xhtwebTXT
   });
   
-  var infowindowXHTWEB = new google.maps.InfoWindow({
-    content: xhtweb
+  var infowindowCWEBPM = new google.maps.InfoWindow({
+    content: cwebPMTXT
   });
 
   var markCWEB = new google.maps.Marker({
@@ -63,6 +64,16 @@ function initMap() {
     
 	markCWEBPM.addListener('click', function() {
 		infowindowCWEBPM.open(map, markCWEBPM);
+	});
+	
+  var markXHTWEB = new google.maps.Marker({
+    position: xhtweb,
+    map: map,
+    title: 'XHTWEB'
+  });
+    
+	markXHTWEB.addListener('click', function() {
+		infowindowXHTWEB.open(map, markXHTWEB);
 	});
   
   
