@@ -28,15 +28,17 @@ function initMap() {
 var iconCWeb = {
     url: logoCWeb, // url
     scaledSize: new google.maps.Size(100, 50), // scaled size
-    origin: new google.maps.Point(0,0), // origin
-    anchor: new google.maps.Point(0, 0) // anchor
+    /*
+	origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0) // anchor*/
 };
 
 var iconXHTWEB = {
     url: logoXHTWEB, // url
     scaledSize: new google.maps.Size(100, 100), // scaled size
+	/*
     origin: new google.maps.Point(0,0), // origin
-    anchor: new google.maps.Point(0, 0) // anchor
+    anchor: new google.maps.Point(0, 0) // anchor */
 };
   
   
