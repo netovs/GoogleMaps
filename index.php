@@ -23,7 +23,22 @@ function initMap() {
   
   // var marker = new google.maps.Marker({position: centrar, map: map});
   var logoCWeb 		= 'https://comunicacionweb.com.mx/images/main-logo.png';
-  var logoXHTWEB	= 'http://xhtweb.com.mx/wp-content/uploads/2016/07/xhtweb_transparente_1.png';
+  var logoXHTWEB	= 'https://xhtweb.com.mx/wp-content/uploads/2016/07/xhtweb_transparente_1.png';
+  
+var iconCWeb = {
+    url: logoCWeb, // url
+    scaledSize: new google.maps.Size(100, 50), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0) // anchor
+};
+
+var iconXHTWEB = {
+    url: logoXHTWEB, // url
+    scaledSize: new google.maps.Size(100, 100), // scaled size
+    origin: new google.maps.Point(0,0), // origin
+    anchor: new google.maps.Point(0, 0) // anchor
+};
+  
   
   var cwebPM = {lat: 20.8635538, lng: -86.9022525};
   var cwebCDMX = {lat: 19.4890817, lng: -99.2057535};
@@ -49,7 +64,8 @@ function initMap() {
   var markCWEB = new google.maps.Marker({
     position: cwebCDMX,
     map: map,
-    title: 'Comunicación Web Ciudad de México'
+    title: 'Comunicación Web Ciudad de México', 
+	icon: iconCWeb
   });
   
   markCWEB.addListener('click', function() {
@@ -59,7 +75,8 @@ function initMap() {
   var markCWEBPM = new google.maps.Marker({
     position: cwebPM,
     map: map,
-    title: 'Comunicación Web Puerto Morelos'
+    title: 'Comunicación Web Puerto Morelos', 
+	icon: iconCWeb
   });
     
 	markCWEBPM.addListener('click', function() {
@@ -69,7 +86,8 @@ function initMap() {
   var markXHTWEB = new google.maps.Marker({
     position: xhtweb,
     map: map,
-    title: 'XHTWEB'
+    title: 'XHTWEB', 
+	icon: iconXHTWEB
   });
     
 	markXHTWEB.addListener('click', function() {
