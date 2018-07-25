@@ -21,7 +21,37 @@ function initMap() {
       document.getElementById('map'), {zoom: 5, center: centrar});
   
   
-  var marker = new google.maps.Marker({position: centrar, map: map});
+  // var marker = new google.maps.Marker({position: centrar, map: map});
+  var logoCWeb 		= 'https://comunicacionweb.com.mx/images/main-logo.png';
+  var logoXHTWEB	= 'http://xhtweb.com.mx/wp-content/uploads/2016/07/xhtweb_transparente_1.png';
+  
+  var cwebPM = {lat: 21.6660159, lng: -98.6699083};
+  var cwebCDMX = {lat: 21.6660159, lng: -98.6699083};
+  
+  var cweb = '<h3>Comunicación <br/>Web</h3>';
+  var xhtweb = '<h3>XHTWEB</h3>';
+  
+  
+  var infowindowCWEB = new google.maps.InfoWindow({
+    content: cweb
+  });
+  
+  var infowindowXHTWEB = new google.maps.InfoWindow({
+    content: xhtweb
+  });
+
+  var markCWEB = new google.maps.Marker({
+    position: cwebPM,
+    map: map,
+    title: 'Comunicación Web'
+  });
+  markCWEB.addListener('click', function() {
+    infowindowCWEB.open(map, markCWEB);
+  });
+  
+  
+  
+  
 }
     </script>
     <!--Load the API from the specified URL
