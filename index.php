@@ -16,10 +16,10 @@
 // Initialize and add the map
 function initMap() {
   
-  var centrar = {lat: 22.6660159, lng: -107.6699083};
-  
+  var centrar = {lat: 21.6660159, lng: -98.6699083};
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 5, center: centrar});
+  
   
   var marker = new google.maps.Marker({position: centrar, map: map});
 }
