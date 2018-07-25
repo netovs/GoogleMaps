@@ -3,8 +3,8 @@
   <head>
     <style>
       #map {
-        height: 480px;  /* The height is 400 pixels */
-        width: 640%;  /* The width is the width of the web page */
+        height: 480px;
+        width: 640px; 
        }
     </style>
   </head>
