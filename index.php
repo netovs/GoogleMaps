@@ -95,12 +95,7 @@ var iconXHTWEB = {
 	markXHTWEB.addListener('click', function() {
 		infowindowXHTWEB.open(map, markXHTWEB);
 	});
-  
-  
-  
-  
-  
-  
+
 }
     </script>
     <!--Load the API from the specified URL
