@@ -12,11 +12,11 @@ type="text/javascript"></script>
 function load() {
    if (GBrowserIsCompatible()) {
       var map = new GMap2(document.getElementById("map"));   
-      map.setCenter(new GLatLng(40,-4),3);   
+      map.setCenter(new GLatLng(21.6660159,-98.6699083),3);   
       map.addControl(new GLargeMapControl());
       map.setMapType(G_NORMAL_MAP); 
       
-      var point = new GPoint (-4,40);
+      var point = new GPoint (-98.6699083,21.6660159);
       var marker = new GMarker(point); 
       map.addOverlay(marker); 
       
@@ -40,9 +40,9 @@ window.onload=load
    <div id="map" style="width: 765px; height: 556px"></div>
    <div id="formulario" style="margin: 10px">
    <form action="#" id="posicion" name="posicion">
-   X: <input type="text" name="x" value="" />
+   X: <input type="text" id="x" name="x" value="" />
    <br />
-   Y: <input type="text" name="y" value="" />
+   Y: <input type="text" id="y" name="y" value="" />
    </form>
    </div>
    <br />
