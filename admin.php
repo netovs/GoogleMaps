@@ -12,19 +12,24 @@ type="text/javascript"></script>
 function load() {
    if (GBrowserIsCompatible()) {
       var map = new GMap2(document.getElementById("map"));   
-      map.setCenter(new GLatLng(19.4890817,-99.2057535),5);   
+      map.setCenter(new GLatLng(19.4890817,-99.2057535),8);   
       map.addControl(new GLargeMapControl());
       map.setMapType(G_NORMAL_MAP); 
       
       var point = new GPoint (-99.2057535,19.4890817);
       var marker = new GMarker(point); 
       map.addOverlay(marker); 
+	  
+	  
       
       GEvent.addListener(map, "click", function (overlay,point){
          if (point){
             marker.setPoint(point);
-            document.posicion.x.value=point.x
-            document.posicion.y.value=point.y
+			
+			
+			
+            document.posicion.x.value=point.lat().toFixed(6);
+            document.posicion.y.value=point.lng().toFixed(6);
          }
       });
    }
