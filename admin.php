@@ -12,11 +12,11 @@ type="text/javascript"></script>
 function load() {
    if (GBrowserIsCompatible()) {
       var map = new GMap2(document.getElementById("map"));   
-      map.setCenter(new GLatLng(21.6660159,-98.6699083),3);   
+      map.setCenter(new GLatLng(19.4890817,-99.2057535),5);   
       map.addControl(new GLargeMapControl());
       map.setMapType(G_NORMAL_MAP); 
       
-      var point = new GPoint (-98.6699083,21.6660159);
+      var point = new GPoint (-99.2057535,19.4890817);
       var marker = new GMarker(point); 
       map.addOverlay(marker); 
       
