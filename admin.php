@@ -4,7 +4,7 @@
 <head>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=ISO-8859-1">
 <title>Mapa de Google</title>
-<script src="http://maps.google.com/maps?file=api&v=2&key=TU-GOOGLE-MAPS-KEY"
+<script src="http://maps.google.com/maps?file=api&v=2&key=AIzaSyAQcBMevHC_wfrYNyzr2RKv5mrPiBhtGt4"
 type="text/javascript"></script>
 <script type="text/javascript">
 //<![CDATA[
