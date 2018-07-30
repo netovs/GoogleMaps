@@ -13,7 +13,7 @@
     <!--The div element for the map -->
     <div id="map"></div>
 	
-	<a href="https://wa.me/?text=Hola,%20me%20interesa%20solicitar%20informes%20para%20pagina%20de%20Internet">Pide informes por Whatsapp</a>
+	<a href="https://wa.me/5571756399?text=Hola,%20me%20interesa%20solicitar%20informes%20para%20pagina%20de%20Internet">Pide informes por Whatsapp</a>
 	
     <script>
 // Initialize and add the map
