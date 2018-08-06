@@ -13,7 +13,7 @@
     <!--The div element for the map -->
     <div id="map"></div>
 	
-	<a href="https://wa.me/5571756399?text=Hola,%20me%20interesa%20solicitar%20informes%20para%20pagina%20de%20Internet">Pide informes por Whatsapp</a>
+	
 	
     <script>
 // Initialize and add the map
@@ -116,7 +116,7 @@ var iconCWeb = {
     * The key parameter will contain your own API key (which is not needed for this tutorial)
     * The callback parameter executes the initMap() function
     -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQcBMevHC_wfrYNyzr2RKv5mrPiBhtGt4&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=_LA_API_DE_GOOGLEMAPS_&callback=initMap">
     </script>
 	
   </body>
